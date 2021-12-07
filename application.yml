@@ -5,6 +5,6 @@ eureka:
     fetchRegistry:
       value: true
     instance:
-      hostname: 18.136.126.140
+      hostname: localhost
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
