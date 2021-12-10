@@ -14,7 +14,7 @@ resilience4j:
     instances:
       post:
         maxRetryAttemps: 5
-        waitDuration: 3s
+        waitDuration: 5s
       user:
         maxRetryAttemps: 5
         waitDuration: 3s
@@ -26,5 +26,5 @@ resilience4j:
         timeoutDuration: 1s
       user:
         limitForPeriod: 1
-        limitRefreshPeriod: 3s
-        timeoutDuration: 5s
+        limitRefreshPeriod: 2s
+        timeoutDuration: 1s
