@@ -21,9 +21,9 @@ resilience4j:
   ratelimiter:
     instances:
       post:
-        limitForPeriod: 2
-        limitRefreshPeriod: 1s
-        timeoutDuration: 1s
+        limitForPeriod: 1
+        limitRefreshPeriod: 3s
+        timeoutDuration: 100s
       user:
         limitForPeriod: 20
         limitRefreshPeriod: 1s
