@@ -8,3 +8,23 @@ eureka:
       hostname: 18.136.126.140
     serviceUrl:
       defaultZone: http://18.136.126.140:8761/eureka
+
+resilience4j:
+  retry:
+    instances:
+      post:
+        maxRetryAttemps: 5
+        waitDuration: 3s
+      user:
+        maxRetryAttemps: 5
+        waitDuration: 3s
+  ratelimiter:
+    instances:
+      post:
+        limitForPeriod: 2
+        limitRefreshPeriod: 1s
+        timeoutDuration: 1s
+      user:
+        limitForPeriod: 2
+        limitRefreshPeriod: 1s
+        timeoutDuration: 1s
