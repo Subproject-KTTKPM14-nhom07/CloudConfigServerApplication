@@ -13,7 +13,7 @@ resilience4j:
   retry:
     instances:
       post:
-        maxRetryAttemps: 0
+        maxRetryAttemps: 1
         waitDuration: 5s
       user:
         maxRetryAttemps: 5
