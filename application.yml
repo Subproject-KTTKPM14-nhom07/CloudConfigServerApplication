@@ -22,7 +22,7 @@ resilience4j:
     instances:
       post:
         limitForPeriod: 1
-        limitRefreshPeriod: 3s
+        limitRefreshPeriod: 10s
         timeoutDuration: 100s
       user:
         limitForPeriod: 100
