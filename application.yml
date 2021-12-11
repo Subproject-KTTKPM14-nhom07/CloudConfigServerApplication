@@ -7,7 +7,7 @@ eureka:
     instance:
       hostname: 18.136.126.140
     serviceUrl:
-      defaultZone: http://18.136.126.140:8762/eureka
+      defaultZone: http://18.136.126.140:8761/eureka
 
 resilience4j:
   retry:
@@ -22,9 +22,9 @@ resilience4j:
     instances:
       post:
         limitForPeriod: 1
-        limitRefreshPeriod: 20s
+        limitRefreshPeriod: 2s
         timeoutDuration: 1s
       user:
         limitForPeriod: 1
-        limitRefreshPeriod: 3s
+        limitRefreshPeriod: 2s
         timeoutDuration: 1s
