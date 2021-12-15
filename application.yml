@@ -5,9 +5,9 @@ eureka:
     fetchRegistry:
       value: true
     instance:
-      hostname: 18.136.126.140
+      hostname: localhost
     serviceUrl:
-      defaultZone: http://18.136.126.140:8761/eureka
+      defaultZone: http://localhost:8761/eureka
 
 resilience4j:
   retry:
